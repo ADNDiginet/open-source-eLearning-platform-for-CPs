@@ -1489,6 +1489,7 @@ class core_course_renderer extends plugin_renderer_base {
         // prepare content of paging bar or more link if it is needed
         $paginationurl = $chelper->get_categories_display_option('paginationurl');
         $paginationallowall = $chelper->get_categories_display_option('paginationallowall');
+        
         if ($totalcount > count($subcategories)) {
             if ($paginationurl) {
                 // the option 'paginationurl was specified, display pagingbar
@@ -1626,12 +1627,15 @@ class core_course_renderer extends plugin_renderer_base {
             // load category content
             $categorycontent = $this->coursecat_category_content($chelper, $coursecat, $depth);
             $classes[] = 'loaded';
-            if (!empty($categorycontent)) {
+            // if (!empty($categorycontent)) {
                 $classes[] = 'with_children';
                 // Category content loaded with children.
                 $this->categoryexpandedonload = true;
-            }
+            // }
         }
+        // $categorycontent = $this->coursecat_category_content($chelper, $coursecat, $depth);
+        //     $classes[] = 'loaded';
+        //     $classes[] = 'with_children';
 
         // Make sure JS file to expand category content is included.
         $this->coursecat_include_js();
@@ -1647,24 +1651,27 @@ class core_course_renderer extends plugin_renderer_base {
         // category name
         $categoryname = $coursecat->get_formatted_name();
         //echo json_encode($coursecat->description->split);
-        $categoryname = html_writer::link(new moodle_url('/course/index.php',
-                array('categoryid' => $coursecat->id)),
-                $categoryname);
-        if ($chelper->get_show_courses() == self::COURSECAT_SHOW_COURSES_COUNT
-                && ($coursescount = $coursecat->get_courses_count())) {
-            $categoryname .= html_writer::tag('span', ' ('. $coursescount.')',
-                    array('title' => get_string('numberofcourses'), 'class' => 'numberofcourse'));
-        }
+        // $categoryname = html_writer::link(new moodle_url('/course/index.php',
+        //         array('categoryid' => $coursecat->id)),
+        //         $categoryname);
+        // if ($chelper->get_show_courses() == self::COURSECAT_SHOW_COURSES_COUNT
+        //         && ($coursescount = $coursecat->get_courses_count())) {
+        //     $categoryname .= html_writer::tag('span', ' ('. $coursescount.')',
+        //             array('title' => get_string('numberofcourses'), 'class' => 'numberofcourse'));
+        // }
         $content .= html_writer::start_tag('div', array('class' => 'info cards'));
 
         $content .= html_writer::tag(($depth > 1) ? 'h4' : 'h3', $categoryname, array('class' => 'categoryname aabtn'));
         $content .= html_writer::end_tag('div'); // .info
 
         // add category content to the output
-        $content .= html_writer::tag('div', $categorycontent, array('class' => 'content'));
+        $content .= html_writer::tag('div', '', array('class' => 'content'));
 
         $content .= html_writer::end_tag('div'); // .category
 
+        $content = html_writer::link(new moodle_url('/course/index.php',
+        array('categoryid' => $coursecat->id)),
+        $content);
         // Return the course category tree HTML
         return $content;
     }
