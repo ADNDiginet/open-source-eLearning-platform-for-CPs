@@ -1,4 +1,4 @@
-# E-learning Platform For CPs
+# e-Learning Platform for Skills Development powered by Swisscontact and developed by ADN Diginet Ltd.
 [![Adn DigiNet Ltd](https://adndiginet.com/wp-content/uploads/2021/12/Group-1799-1.svg)](https://adndiginet.com)
 
 # Setup on Cpanel
