@@ -1,0 +1,39 @@
+<model-viewer src="EyeballExport_02.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" shadow-softness="1" camera-orbit="301.7deg 83.12deg auto">
+    <button class="Hotspot" slot="hotspot-2" data-position="0.04240963311669921m -0.025387532415947937m 1.16378373240866m" data-normal="0.06645661122211852m -0.05244915396667129m 0.9964098579766525m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Cornea</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="0.07239726156459803m 0.1826017725325637m 0.9117698571750843m" data-normal="-0.0040708448370411114m -0.010029691970577221m 0.9999414150345449m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Iris</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="0.07567121137826138m -0.0076606646399395295m 0.8785175049739795m" data-normal="0.20403021038277122m 0.018784269893722307m 0.978784360549208m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Pupil</div>
+    </button><button class="Hotspot" slot="hotspot-9" data-position="0.006732093426078389m -0.5272569711970017m 0.7764178467028521m" data-normal="-0.9868955133129861m 0.15976386527661166m 0.022644053404248275m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Ciliary Body</div>
+    </button><button class="Hotspot" slot="hotspot-10" data-position="0.07782049945371616m -0.007995326816423565m 0.30086818558184136m" data-normal="-0.9804624453485236m 0.19483776232186395m -0.027048837952901455m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Hyaloid Canal</div>
+    </button><button class="Hotspot" slot="hotspot-13" data-position="0.11615556441166408m -0.09547893659038453m -1.4363380714443807m" data-normal="-0.7702952132437532m 0.6364047053754774m -0.04042691466971722m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Optic Nerve</div>
+    </button><button class="Hotspot" slot="hotspot-17" data-position="0.00018824810512541035m 0.43837923312841953m 0.05901933896977796m" data-normal="-0.9999955227583466m -0.002978396517923536m -0.0002891668086042722m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Vitreous Humor</div>
+    </button><button class="Hotspot" slot="hotspot-18" data-position="0.012333199511214143m 0.5291525404478232m 0.9229311262380433m" data-normal="-0.31831784408842706m 0.6525968347391994m 0.6875980813115129m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Sclera</div>
+    </button><button class="Hotspot" slot="hotspot-19" data-position="-0.0027284166806991195m -0.6692101593391798m -0.7086653509550422m" data-normal="-0.9940244321516525m -0.07676224497682992m -0.07760789928674783m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Choroid</div>
+    </button><button class="Hotspot" slot="hotspot-20" data-position="0.06686154355925966m -0.3028971116732751m -0.8767426996445978m" data-normal="-0.09391973579782066m 0.4692031259607056m 0.8780817216047547m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Fovea</div>
+    </button><button class="Hotspot" slot="hotspot-21" data-position="0.021376303635813443m -0.7688355825785747m 0.5073423081929378m" data-normal="-0.9955244959713541m -0.03947326563337705m 0.08586523872451682m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Ora Serrata</div>
+    </button><button class="Hotspot" slot="hotspot-1" data-position="0.0345489933591816m 0.921077600514638m -0.05642433737341723m" data-normal="-0.22598791438276014m -0.9724270293997415m 0.05757720942981338m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Retina</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="0.2228886974749269m -0.15363439425552716m -0.9033075025365307m" data-normal="-0.48909462784749297m 0.32443863157684777m 0.8096456134329789m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Blind Spot</div>
+    </button><button class="Hotspot" slot="hotspot-8" data-position="0.07333851019104554m -0.32495750688336844m 0.7772635186032142m" data-normal="-0.9753866582738181m -0.0865919764847411m -0.20278731831625965m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Suspensory Ligament</div>
+    </button><button class="Hotspot" slot="hotspot-11" data-position="0.07120659025171694m 0.009372684293851019m -1.140801451272139m" data-normal="-0.9994536561891708m 0.024532726060476046m 0.022148013051749477m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Central Retinal Artery</div>
+    </button><button class="Hotspot" slot="hotspot-12" data-position="0.0874334197604072m -0.009386961346642186m -1.3423346723325218m" data-normal="-0.8723285725667365m -0.4888635507943283m 0.007435737249327651m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Central Retinal Vein</div>
+    </button><button class="Hotspot" slot="hotspot-14" data-position="0.028192076226643437m 1.2388575656267957m -0.21248727444114673m" data-normal="-0.3728904748435733m 0.9226426673688513m 0.09840326275803014m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Superior Rectus Muscle</div>
+    </button><button class="Hotspot" slot="hotspot-16" data-position="0.018753055286890863m -1.1169821877719257m -0.30321922689441466m" data-normal="-0.9995329064778536m -0.030521812242286492m 0.001545265472609143m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Inferior Rectus Muscle</div>
+    </button>
+</model-viewer>

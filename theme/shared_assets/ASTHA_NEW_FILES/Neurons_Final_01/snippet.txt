@@ -1,0 +1,23 @@
+<model-viewer src="Neuron_Final_02.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="2" shadow-softness="0.8" camera-orbit="0.7435deg 82.25deg 64.7m" field-of-view="30deg">
+    <button class="Hotspot" slot="hotspot-1" data-position="-11.464135220524527m 12.945041969053854m -0.30342010649278706m" data-normal="-0.13094511149563307m 0.01302462502021545m 0.9913040587622342m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Dendrites</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="-9.033720569067485m 7.4087184027153405m 0.6250733297564963m" data-normal="-0.011929897463071127m 0.07175122094459248m 0.9973512118804895m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Nucleus</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-9.489176551975214m 5.0703858322059006m 0.585239383211352m" data-normal="0.015910515691563452m 0.12093368294913966m 0.9925330724055423m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Soma (Cell Body)</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-2.3655028507908993m 7.091622238082737m 0.6675815516936154m" data-normal="0.13127199295984404m 0.538219551458193m 0.8325186954612444m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Myelin Sheath</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="2.7977535032616427m 6.809620030709229m 0.523842357206675m" data-normal="0.47536573955321787m -0.6399910646541442m 0.603687709682645m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Schwann Cell</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="1.1514925083216152m 6.259676089007165m 0.6862134446303969m" data-normal="0.24313349558507785m -0.5666022928367863m 0.7873042265075665m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Axon</div>
+    </button><button class="Hotspot" slot="hotspot-7" data-position="5.132759518553435m 8.046850789946753m 0.11960619256034022m" data-normal="0.062393089950175416m 0.9454874574991015m 0.3196256717448624m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Node of Ranvier</div>
+    </button><button class="Hotspot" slot="hotspot-8" data-position="-4.11577554087108m 7.410830899226745m 0.4470892210587323m" data-normal="0.015699643050461367m 0.11927067739092322m 0.9927376424427545m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Axon Hillock</div>
+    </button><button class="Hotspot" slot="hotspot-9" data-position="13.058173554451074m 3.8425500213447767m 1.6606482544739551m" data-normal="0.06363625509270299m 0.24343859378368823m 0.9678264710651372m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Synaptic Knob</div>
+    </button><button class="Hotspot" slot="hotspot-10" data-position="13.730648185140538m 6.000066513180739m 0.13365845640110052m" data-normal="-0.643281023028589m -0.16693484925853888m 0.7472096636917386m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Axon Terminals</div>
+    </button>
+</model-viewer>

@@ -1,0 +1,234 @@
+html {
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:not(:defined)>* {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+  background-color: #9c9c9c;
+}
+
+.Hotspot {
+  background: rgb(248, 248, 248);
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 8px;
+  padding: 6px;
+  position: relative;
+  /* transition: opacity 1s; */
+  width: 8px;
+}
+
+.Hotspot:not([data-visible]) {
+  background: transparent;
+  border: 2px solid #fff;
+  box-shadow: none;
+  height: 4px;
+  pointer-events: none;
+  width: 4px;
+}
+
+.Hotspot:focus {
+  /* border: 4px solid rgb(0, 128, 200); */
+  box-shadow: 0px 0px 0px 4px rgb(0, 128, 200);
+  height: 8px;
+  outline: none;
+  width: 8px;
+}
+
+.Hotspot>* {
+  /* opacity: .75; */
+  transform: translateY(-50%);
+}
+
+.HotspotAnnotation {
+  background: rgb(230, 230, 230);
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  /* font-family: Helvetica, sans-serif; */
+  /* font-family: 'Noto Serif Bengali', serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  left: calc(50% + 1em);
+  max-width: fit-content;
+  overflow-wrap: break-word;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  top: -10%;
+  width: max-content;
+
+  display: none;
+}
+
+.Hotspot:not([data-visible])>* {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(calc(-50% + 4px));
+  transition: transform 1s, opacity 1s;
+}
+
+
+/* Custom code */
+
+.HotspotAnnotationDescription {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: rgb(230, 230, 230);
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+  width: inherit;
+  /* max-height: 20vh; */
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0.25rem .25rem .25rem;
+  overflow: scroll;
+}
+
+.Hotspot:hover .HotspotAnnotation {
+  display: block;
+}
+
+.Hotspot:focus .HotspotAnnotation {
+  display: block;
+  border-radius: .25rem .25rem 0 0;
+}
+
+.Hotspot:focus .HotspotAnnotationDescription {
+  display: block;
+}
+
+#en * {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#bn * {
+  font-family: 'Noto Serif Bengali', serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#en button>div:nth-child(2) {
+  display: none;
+}
+
+#bn button>div:nth-child(1) {
+  display: none;
+}
+
+/* 
+TOGGLE SWITCH
+*/
+.switch {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: .85rem;
+  color: #333;
+  position: absolute;
+  right: 2rem;
+  top: 1.25rem;
+  z-index: 1;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  transition: .4s;
+  opacity: .25;
+}
+
+.switch:hover {
+  opacity: 1;
+}
+
+.switch .switch-en {
+  position: absolute;
+  left: -1.35rem;
+  top: 0.2rem;
+}
+
+.switch .switch-bn {
+  position: absolute;
+  left: 3.3rem;
+  top: 0.2rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  height: 28px;
+  width: 48px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: 150ms;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* TOGGLE SWITCH END */

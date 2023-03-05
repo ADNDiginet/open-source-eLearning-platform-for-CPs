@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+</head>
+
+<div class="content" style="position: relative">
+    <!-- Rounded switch -->
+    <label class="switch">
+        <input type="checkbox" onchange="setLang()">
+        <span class="slider round"></span>
+        <span class="switch-en">en</span>
+        <span class="switch-bn">bn</span>
+    </label>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="EAR_Redone.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp"
+        shadow-intensity="1" camera-orbit="-97.73deg 85.62deg 59.95m" field-of-view="30deg" id="en">
+        <button class="Hotspot" slot="hotspot-2"
+            data-position="0.8195402787018651m 14.740757298124514m -15.31795542873861m"
+            data-normal="-0.8618896941611996m -0.506192366596482m 0.03025629022478322m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Scapha
+                <div class="HotspotAnnotationDescription">The elongated depression of the ear that separates the helix
+                    and antihelix.</div>
+            </div>
+            <div class="HotspotAnnotation">স্কাফা
+                <div class="HotspotAnnotationDescription">কানের দীর্ঘায়িত বিষণ্নতা যা হেলিক্স এবং অ্যান্টিহেলিক্সকে
+                    আলাদা করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-3"
+            data-position="-2.987804093095189m 14.354794829767773m -12.398828897860788m"
+            data-normal="-0.4134625876419893m -0.3451628562371354m -0.8425623367410943m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Triangular Fossa
+                <div class="HotspotAnnotationDescription">The depression at the upper part of the auricle between the
+                    two crura of the anthelix.</div>
+            </div>
+            <div class="HotspotAnnotation">ট্রায়াঙ্গুলার ফোসা
+                <div class="HotspotAnnotationDescription">অ্যান্টিহেলিক্সের দুটি ক্রুর মধ্যে অরিকেলের উপরের অংশে একটি
+                    বিষণ্ন স্থান।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-5"
+            data-position="-0.1674338819731247m 12.928717026940507m -14.911156155227097m"
+            data-normal="-0.566251485619516m -0.07914327693648988m -0.820424034721951m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Antihelix
+                <div class="HotspotAnnotationDescription">A Y-shaped curved cartilaginous ridge arising from the
+                    antitragus and separating the concha, triangular fossa, and scapha.</div>
+            </div>
+            <div class="HotspotAnnotation">অ্যান্টিহেলিক্স
+                <div class="HotspotAnnotationDescription">একটি Y-আকৃতির বাঁকা কার্টিলাজিনাস রিজ যা অ্যান্টিট্রাগাস থেকে
+                    উৎপন্ন হয় এবং কনচা, ট্রায়াঙ্গুলার ফোসা এবং স্কাফাকে আলাদা করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-6"
+            data-position="-2.6773802825782766m 7.613208989494192m -10.664002035914095m"
+            data-normal="-0.406664592570618m 0.07972354086017634m -0.9100923393711702m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Cavum Conchae
+                <div class="HotspotAnnotationDescription">The cavum conchae is the cavity of the funnel-shaped proximal
+                    part of the auricle.</div>
+            </div>
+            <div class="HotspotAnnotation">ক্যাভাম কংকি
+                <div class="HotspotAnnotationDescription">ক্যাভাম কংকি হল অরিকলের ফানেল-আকৃতির প্রক্সিমাল অংশের গহ্বর।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-7"
+            data-position="-4.957843716412036m 1.9191827590482955m -11.348396690373816m"
+            data-normal="-0.5838741904603996m -0.3678821212687932m -0.7237082800168767m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Earlobe
+                <div class="HotspotAnnotationDescription">A soft, rounded fleshy part hanging from the lower margin of
+                    the ear.</div>
+            </div>
+            <div class="HotspotAnnotation">কানের লতি
+                <div class="HotspotAnnotationDescription">একটি নরম, গোলাকার মাংসল অংশ যা কানের নীচের প্রান্ত থেকে ঝুলে
+                    থাকে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-8"
+            data-position="-3.1484018761730823m 16.642170821929625m -14.846620353888525m"
+            data-normal="-0.3125966975044336m 0.0060330659887936795m -0.9498667837250108m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Helix
+                <div class="HotspotAnnotationDescription">The outer rim of the ear that extends from the superior
+                    insertion of the ear on the scalp to the termination of the cartilage at the earlobe.</div>
+            </div>
+            <div class="HotspotAnnotation">হিলিক্স
+                <div class="HotspotAnnotationDescription">কানের বাইরের রিম যা স্ক্যাল্পে কানের উচ্চতর সন্নিবেশ থেকে
+                    কানের লোবে কার্টিলেজের সমাপ্তি পর্যন্ত বিস্তৃত।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-9"
+            data-position="-6.251592729326369m 8.54894802758114m -10.087607462520957m"
+            data-normal="-0.6919201347455008m -0.16363682000736932m -0.7031852659659785m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Tragus
+                <div class="HotspotAnnotationDescription">The small piece of thick cartilage on the inner side of the
+                    external ear that is immediately in front of and partly closing the ear canal.</div>
+            </div>
+            <div class="HotspotAnnotation">ট্রেগাস
+                <div class="HotspotAnnotationDescription">বাহ্যিক কানের ভিতরের দিকে পুরু কার্টিলেজের ছোট টুকরা যা
+                    কানের কানালের অবিলম্বে সামনে থাকে এবং কানের কানালকে আংশিকভাবে বন্ধ করে দেয়।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-10"
+            data-position="-4.032390172208071m 5.859688746880035m -12.829960358662639m"
+            data-normal="-0.7043872408075399m 0.3746052407562044m -0.6029175139150686m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Antitragus
+                <div class="HotspotAnnotationDescription">A cartilaginous projection of the external ear opposite the
+                    tragus.</div>
+            </div>
+            <div class="HotspotAnnotation">অ্যান্টিট্রেগাস
+                <div class="HotspotAnnotationDescription">ট্রেগাসের বিপরীতে বাহ্যিক কানের একটি কার্টিলাজিনাস অভিক্ষেপ।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-11"
+            data-position="-3.6933880261609797m 10.588461047050595m -11.668569701547959m"
+            data-normal="-0.0061606707610536255m -0.3753313372110695m -0.9268702354931483m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Crus Helix
+                <div class="HotspotAnnotationDescription">The continuation of the anteroinferior ascending helix, which
+                    extends in a posteroinferior direction into the cavity of the concha above the external auditory
+                    meatus.</div>
+            </div>
+            <div class="HotspotAnnotation">ক্রাস হিলিক্স
+                <div class="HotspotAnnotationDescription">
+                    অ্যান্টেরোইনফেরিয়র অ্যাসেন্ডিং হিলিক্সের ধারাবাহিকতা, যা বাহ্যিক শ্রবণশক্তির উপরে কনচার গহ্বরে
+                    উত্তরোত্তর দিকে প্রসারিত হয়।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-12"
+            data-position="-2.617210346351623m 11.340636987076419m -10.671673754844036m"
+            data-normal="-0.20572609141190268m -0.2702246624050471m -0.9405612192411826m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Cymba Conchae
+                <div class="HotspotAnnotationDescription">The upper, smaller part of the external ear lying above the
+                    crus helix.</div>
+            </div>
+            <div class="HotspotAnnotation">সিম্বা কংকি
+                <div class="HotspotAnnotationDescription">বাহ্যিক কানের উপরের, ছোট অংশ যা ক্রাস হিলিক্সের উপরে অবস্থিত।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-13"
+            data-position="-5.623996909377546m 8.779622552952953m -5.19384772376705m"
+            data-normal="-0.9420658250060763m 0.1398126890163939m -0.30490062864091627m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Auditory Canal
+                <div class="HotspotAnnotationDescription">The narrow passageway from the outer ear to the eardrum.</div>
+            </div>
+            <div class="HotspotAnnotation">অডিটরি ক্যানাল
+                <div class="HotspotAnnotationDescription">বাইরের কান থেকে কানের পর্দা পর্যন্ত সরু পথ।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-14"
+            data-position="-6.347814045977376m 8.989575664389514m -2.2844204233550993m"
+            data-normal="-0.4658736986628491m -0.0745457762106743m -0.881705520082156m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Tympanic Membrane
+                <div class="HotspotAnnotationDescription">Tympanic membrane, also called eardrum, is a thin layer of
+                    tissue in the human ear that receives sound vibrations from the outer air and transmits them to the
+                    auditory ossicles.</div>
+            </div>
+            <div class="HotspotAnnotation">টিমপ্যানিক মেমব্রেন
+                <div class="HotspotAnnotationDescription">টাইমপ্যানিক মেমব্রেন, যাকে কানের পর্দাও বলা হয়, এটি মানুষের
+                    কানের টিস্যুর একটি পাতলা স্তর যা বাইরের বাতাস থেকে শব্দ কম্পন গ্রহণ করে এবং সেগুলিকে অডিটোরি ওসিকেলে
+                    প্রেরণ করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-17"
+            data-position="-6.966868408889596m 9.435119800757748m -1.3934555365701566m"
+            data-normal="-0.9004913621211397m -0.08978512333700982m -0.4255043341407612m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Incus
+                <div class="HotspotAnnotationDescription">A small anvil-shaped bone in the middle ear, transmitting
+                    vibrations between the malleus and stapes.</div>
+            </div>
+            <div class="HotspotAnnotation">ইনকাস
+                <div class="HotspotAnnotationDescription">
+                    মধ্যকর্ণে একটি ছোট অ্যানভিল-আকৃতির হাড়, যা ম্যালিয়াস এবং স্টেপসের মধ্যে কম্পন প্রেরণ করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-18"
+            data-position="-6.806813199715428m 9.477348379413693m -1.853312813021045m"
+            data-normal="-0.9087271478144968m -0.11554773875327995m -0.4010781605796225m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Malleus
+                <div class="HotspotAnnotationDescription">A small anvil-shaped bone in the middle ear, transmitting
+                    vibrations between the malleus and stapes.</div>
+            </div>
+            <div class="HotspotAnnotation">ইনকাস
+                <div class="HotspotAnnotationDescription">
+                    মধ্যকর্ণে একটি ছোট অ্যানভিল-আকৃতির হাড়, যা ম্যালিয়াস এবং স্টেপসের মধ্যে কম্পন প্রেরণ করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-21"
+            data-position="-6.707010417566792m 9.030193243426492m -0.6067041974791092m"
+            data-normal="-0.5860638203677457m -0.412820514093171m -0.6972147600272192m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Oval Window
+                <div class="HotspotAnnotationDescription">The oval window is a connective tissue membrane located at
+                    the end of the middle ear and the beginning of the inner ear.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">ওভাল উইন্ডো
+                <div class="HotspotAnnotationDescription">ওভাল উইন্ডো হল একটি সংযোজক টিস্যু ঝিল্লি যা মধ্য কানের শেষে
+                    এবং ভিতরের কানের শুরুতে অবস্থিত।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-22"
+            data-position="-6.771196343458627m 8.905878077706735m -0.9388897173515085m"
+            data-normal="-0.8535804151191508m -0.34428569537171566m 0.3909831644552393m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Stapes
+                <div class="HotspotAnnotationDescription">A small stirrup-shaped bone in the middle ear, transmitting
+                    vibrations from the incus to the inner ear.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">স্টেপস
+                <div class="HotspotAnnotationDescription">মধ্য কানের একটি ছোট স্টিরাপ-আকৃতির হাড়, ইনকাস থেকে ভেতরের
+                    কানে কম্পন প্রেরণ করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-23"
+            data-position="-7.385972094506958m 11.401252078550286m -0.23258369897008446m"
+            data-normal="-0.8638715833584343m 0.5013848535694555m -0.048364409196508716m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Semicircular Canals
+                <div class="HotspotAnnotationDescription">Semicircular canals are three tiny, fluid-filled tubes in the
+                    inner ear that help keep balance.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">সেমিসারকুলার ক্যানাল
+                <div class="HotspotAnnotationDescription">সেমিসারকুলার ক্যানাল হল তিনটি ক্ষুদ্র, ভিতরের কানের তরল-ভরা
+                    টিউব যা ভারসাম্য বজায় রাখতে সাহায্য করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-24"
+            data-position="-5.076673134168146m 10.433171685301648m 1.3120274628984028m"
+            data-normal="-0.7281272988332036m -0.0732046692384154m 0.6815216160148972m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Vestibular Nerve
+                <div class="HotspotAnnotationDescription">The vestibular nerve is primarily responsible for maintaining
+                    body balance and eye movements.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">ভেস্টিবুলার নার্ভ
+                <div class="HotspotAnnotationDescription">ভেস্টিবুলার নার্ভ প্রাথমিকভাবে শরীরের ভারসাম্য এবং চোখের
+                    নড়াচড়ার জন্য দায়ী।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-25"
+            data-position="-4.775939826757625m 9.795417672017633m 1.8666000038493884m"
+            data-normal="-0.5831684184359316m 0.06686455407441193m 0.8095947919467887m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Cochlear Nerve
+                <div class="HotspotAnnotationDescription">The cochlear nerve, is the sensory nerve that transfers
+                    auditory information from the cochlea to the brain.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">কক্লিয়ার নার্ভ
+                <div class="HotspotAnnotationDescription">কক্লিয়ার নার্ভ হল একটি সংবেদনশীল স্নায়ু যা কক্লিয়ার থেকে
+                    মস্তিষ্কে শ্রবণ সংক্রান্ত তথ্য স্থানান্তর করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-26"
+            data-position="-6.615317582417937m 8.599052177481761m 1.5732153349783982m"
+            data-normal="-0.917417590329923m -0.19604797484188574m 0.346280459329765m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Cochlea
+                <div class="HotspotAnnotationDescription">The cochlea is a hollow, spiral-shaped bone in the inner ear
+                    that plays a key role in the sense of hearing, and participates in the process of auditory
+                    transduction.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">কক্লিয়া
+                <div class="HotspotAnnotationDescription">কক্লিয়া হল অভ্যন্তরীণ কানের একটি ফাঁপা, সর্পিল-আকৃতির হাড় যা
+                    শ্রবণের অনুভূতিতে গুরুত্বপূর্ণ ভূমিকা পালন করে এবং শ্রবণ ট্রান্সডাকশন প্রক্রিয়ায় অংশগ্রহণ করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-27"
+            data-position="-6.312630291500717m 8.65596692776623m -0.5622493314682693m"
+            data-normal="-0.13946174184631333m -0.18678775700243094m -0.972450901791547m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Fenestra Cochlea
+                <div class="HotspotAnnotationDescription">Fenestra cochleae is one of two openings in the middle ear at
+                    the level of the cochlea allowing communication between the mesotympanum of the middle ear and the
+                    inner ear.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">ফেনেস্ট্রা কক্লিয়া
+                <div class="HotspotAnnotationDescription">ফেনেস্ট্রা কক্লিয়া হল কক্লিয়ার স্তরে মধ্যকর্ণের দুটি খোলার
+                    মধ্যে একটি যা মধ্যকর্ণের মেসোটিম্পানাম এবং ভেতরের কানের মধ্যে যোগাযোগকে সক্ষম করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-28"
+            data-position="-8.967625312827025m 4.2167089432877365m 3.9147856224186004m"
+            data-normal="-0.9076274133589026m 0.37830941016716824m -0.18191885195987018m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Eustachian Tube
+                <div class="HotspotAnnotationDescription">Eustachian tubes connect the middle ears to
+                    the back of the throat. They help drain fluid and equalize the air pressure inside the ears.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">ইউস্টেকিয়ান টিউব
+                <div class="HotspotAnnotationDescription">ইউস্টেকিয়ান টিউবগুলি মধ্য কানকে গলার পিছনের সাথে সংযুক্ত করে।
+                    তারা তরল নিষ্কাশন করতে এবং কানের ভিতরে বাতাসের চাপকে সমান করতে সহায়তা করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-29"
+            data-position="-5.998252646419665m 8.246271525388286m -1.334719399256592m"
+            data-normal="-0.9530188173140666m 0.29937651730813847m 0.04613929702268834m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Tympanic Cavity
+                <div class="HotspotAnnotationDescription">The tympanic cavity is an air-filled compartment surrounded by
+                    bone that is separated from the external ear by a thin tympanic membrane and is in direct
+                    communication with the pharynx via the auditory tube.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">টিমপ্যানিক ক্যাভিটি
+                <div class="HotspotAnnotationDescription">টিমপ্যানিক ক্যাভিটি হল হাড় দ্বারা বেষ্টিত একটি বায়ু-ভরা বগি
+                    যা একটি পাতলা টিমপ্যানিক ঝিল্লি দ্বারা বাহ্যিক কান থেকে পৃথক করা হয় এবং শ্রবণ নলের মাধ্যমে
+                    ফ্যারিনক্সের সাথে সরাসরি যোগাযোগ করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-30"
+            data-position="-6.63781264053474m 5.91423766819639m -6.745425976729119m"
+            data-normal="-0.9998578878332436m 0.013823692599371697m 0.009649334721279549m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Cartilage
+                <div class="HotspotAnnotationDescription">Cartilage is a tough, flexible tissue that lines joints and
+                    gives structure to the nose, ears, larynx, and other parts of the body.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">কার্টিলেজ
+                <div class="HotspotAnnotationDescription">কার্টিলেজ হল একটি শক্ত, নমনীয় টিস্যু যা জয়েন্টগুলিকে লাইন
+                    করে এবং নাক, কান, স্বরযন্ত্র এবং শরীরের অন্যান্য অংশে গঠন দেয়।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-31"
+            data-position="-6.384476810864442m 16.651178378115123m -7.66385095797021m"
+            data-normal="-0.9915360173300289m 0.030416185310436373m 0.12621878627393712m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Temporal Muscle
+                <div class="HotspotAnnotationDescription">The temporal muscle, is one of the muscles of mastication. It
+                    is a broad, fan-shaped convergent muscle on each side of the head that fills the temporal fossa.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">টেম্পোরাল মাসেল
+                <div class="HotspotAnnotationDescription">টেম্পোরাল মাসেল ম্যাস্টিকেশনের পেশীগুলির মধ্যে একটি। এটি মাথার
+                    প্রতিটি পাশে একটি বিস্তৃত, পাখা-আকৃতির অভিসারী পেশী যা টেম্পোরাল ফোসা পূরণ করে।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-32"
+            data-position="-6.53176942043666m 15.737083385900029m -6.392700668475992m"
+            data-normal="-0.9999367806512832m 0.008851857764644533m 0.006933924924741727m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Temporal Bone
+                <div class="HotspotAnnotationDescription">A compound bone of the side of the skull that has four
+                    principal parts, including the squamous, petrous, and tympanic portions and the mastoid process.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">টেম্পোরাল বোন
+                <div class="HotspotAnnotationDescription">
+                    মাথার খুলির পাশের একটি যৌগিক হাড় যার চারটি প্রধান অংশ রয়েছে, যার মধ্যে রয়েছে স্কোয়ামাস, পেট্রাস,
+                    ও টিমপ্যানিক অংশ, এবং মাস্টয়েড প্রসেস।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-33"
+            data-position="-6.669850421231942m 6.944654746191085m -3.413180378006011m"
+            data-normal="-0.9877337170562227m -0.07363501425130095m -0.13769527539646564m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Mastoid Bone
+                <div class="HotspotAnnotationDescription">The mastoid bone, which is full of air cells, is part of
+                    the temporal bone of the skull. The mastoid air cells are thought to protect the delicate structures
+                    of the ear, regulate ear pressure and possibly protect the temporal bone during trauma.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">মাস্টয়েড বোন
+                <div class="HotspotAnnotationDescription">মাস্টয়েড হাড়, যা বায়ু কোষে পূর্ণ, এটি খুলির অস্থায়ী হাড়ের
+                    অংশ। মাস্টয়েড বায়ু কোষগুলি কানের সূক্ষ্ম কাঠামো রক্ষা করে, কানের চাপ নিয়ন্ত্রণ করে এবং সম্ভবত
+                    আঘাতের সময় টেম্পোরাল বোনকে রক্ষা করে বলে মনে করা হয়।
+                </div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-34"
+            data-position="-6.641724513686185m 3.354507624338911m -6.208946950570347m"
+            data-normal="-0.9960749287934998m -0.029395847806661754m 0.08349024111087373m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Fat
+                <div class="HotspotAnnotationDescription">A natural oily substance occurring in animal bodies.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">চর্বি
+                <div class="HotspotAnnotationDescription">একটি প্রাকৃতিক তৈলাক্ত পদার্থ যা প্রাণীর দেহে ঘটে।
+                </div>
+            </div>
+        </button>
+    </model-viewer>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="./main.js"></script>
+    </div>
+
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+</head>
+
+<div class="content" style="position: relative">
+    <!-- Rounded switch -->
+    <label class="switch">
+        <input type="checkbox" onchange="setLang()">
+        <span class="slider round"></span>
+        <span class="switch-en">en</span>
+        <span class="switch-bn">bn</span>
+    </label>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Tooth_Final_02.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+        poster="poster.webp" shadow-intensity="1" exposure="1" camera-orbit="163.5deg 76.05deg auto" id="en">
+        <button class="Hotspot" slot="hotspot-1"
+            data-position="-5.179603689145438m 9.861811059529167m -1.8901997343566705m"
+            data-normal="-0.12797499713118088m 0.07030216363409376m -0.9892825713099566m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Enamel
+                <div class="HotspotAnnotationDescription">The tough, shiny, white outer surface of the tooth.</div>
+            </div>
+            <div class="HotspotAnnotation">এনামেল
+                <div class="HotspotAnnotationDescription">দাঁতের শক্ত, চকচকে, সাদা বাইরের স্তর।</div>
+            </div>
+
+        </button><button class="Hotspot" slot="hotspot-2"
+            data-position="4.272488759136699m 5.770375856543531m -1.9539620717307145m"
+            data-normal="0.000007290565992229491m -0.020212011604932297m -0.9997957164009704m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Dentin
+                <div class="HotspotAnnotationDescription">The hard but porous tissue located under both the enamel and
+                    cementum of the tooth. Dentin is harder than bone.</div>
+            </div>
+            <div class="HotspotAnnotation">ডেন্টিন
+                <div class="HotspotAnnotationDescription">দাঁতের শক্ত কিন্তু ছিদ্রযুক্ত টিস্যু যা এনামেল এবং সিমেন্টাম
+                    উভয়ের নিচে অবস্থিত। ডেন্টিন হাড়ের চেয়ে শক্ত।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-3"
+            data-position="-5.183746968015296m -5.090064372450274m -1.2684264794634714m"
+            data-normal="-0.2429505677098784m -0.08963908659044983m -0.9658881176433831m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Cementum
+                <div class="HotspotAnnotationDescription">A layer of tough, yellow-ish, bone-like tissue that covers the
+                    root of the tooth. It helps hold the tooth in the socket.</div>
+            </div>
+            <div class="HotspotAnnotation">সিমেন্টাম
+                <div class="HotspotAnnotationDescription">শক্ত, হলুদ দেখতে, হাড়ের মতো টিস্যুর একটি স্তর যা দাঁতের
+                    গোড়াকে ঘিরে থাকে। এটি সকেটে দাঁত ধরে রাখতে সাহায্য করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-4"
+            data-position="-3.8420581892255323m 2.0581054283259492m 0.27509557040572474m"
+            data-normal="-0.06642656823962792m 0.08254277004007463m -0.9943712597144075m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Pulp
+                <div class="HotspotAnnotationDescription">This is the soft center of the tooth which contains blood
+                    vessels and nerves, and nourishes the dentin.</div>
+            </div>
+            <div class="HotspotAnnotation">পাল্প
+                <div class="HotspotAnnotationDescription">এটি দাঁতের নরম কেন্দ্র, যা ব্লাড ভেসাল এবং নার্ভ ধারণ করে, এবং
+                    ডেন্টিনকে পুষ্ট করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-6"
+            data-position="2.8498924996652484m -4.364370519813979m -0.9361482206886151m"
+            data-normal="-0.009750218336284379m 0.00686101691832612m -0.9999289273189577m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Root Canal
+                <div class="HotspotAnnotationDescription">A root canal is the naturally occurring anatomic space within
+                    the root of a tooth. Among other things, it consists of the pulp cavity and the main canals.</div>
+            </div>
+            <div class="HotspotAnnotation">রুট ক্যানাল
+                <div class="HotspotAnnotationDescription">রুট ক্যানাল দাঁতের রুটের মধ্যে প্রাকৃতিকভাবে সৃষ্ট
+                    শারীরবৃত্তীয়
+                    একটি স্থান। রুট ক্যানালে পাল্প গহ্বর, এবং প্রধান খাল গুলো অবস্থিত।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-7"
+            data-position="-3.0327304454713353m -1.42559060471739m -1.1839664301326085m"
+            data-normal="0.0003687138990630104m -0.011938487395553359m -0.9999286657400952m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Nerves
+                <div class="HotspotAnnotationDescription">These are nerve endings that run along a passage at the base
+                    of the gums where the roots meet. These nerve endings enter the pulp cavity of each tooth through
+                    the root canal, and are responsible for carrying electrical impulses to and from the brain.</div>
+            </div>
+            <div class="HotspotAnnotation">নার্ভ
+                <div class="HotspotAnnotationDescription">এগুলি হল নার্ভের প্রান্ত যা দাঁতের শিকড়ের সাথে মাড়ির
+                    মিলনস্থলের নীচে একটি পথ ধরে চলে। এই নার্ভগুলি রুট ক্যানালের মাধ্যমে প্রতিটি দাঁতের পাল্প গহ্বরে
+                    প্রবেশ
+                    করে, এবং মস্তিষ্কে থেকে বৈদ্যুতিক আবেগ বহন করার জন্য দায়ী।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-8"
+            data-position="2.8249590700525005m 0.4957995336540546m -1.1387592617784297m"
+            data-normal="0.7929580300113251m 0.36759193474810314m -0.4858947747699135m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Blood Vessels
+                <div class="HotspotAnnotationDescription">These are responsible for supplying blood to all parts of the
+                    teeth.</div>
+            </div>
+            <div class="HotspotAnnotation">ব্লাড ভেসাল
+                <div class="HotspotAnnotationDescription">এগুলো দাঁতের সব অংশে রক্ত ​​সরবরাহের জন্য দায়ী।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-10"
+            data-position="11.34886135911416m 1.217179197606562m -0.5811049806936524m"
+            data-normal="0.06947274332987265m 0.5642937424474235m -0.8226457987304757m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Gum
+                <div class="HotspotAnnotationDescription">The soft tissue that surrounds the base of the teeth.</div>
+            </div>
+            <div class="HotspotAnnotation">মাড়ি
+                <div class="HotspotAnnotationDescription">নরম টিস্যু যা দাঁতের গোড়াকে ঘিরে থাকে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-5"
+            data-position="5.668235000882856m -6.503121070413818m -1.2180797033088169m"
+            data-normal="0.15814437592847075m -0.06079457873128285m -0.9855426807394394m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Periodontal Ligament
+                <div class="HotspotAnnotationDescription">The periodontal ligament is made of connective tissue and
+                    collagen fiber. Along with the cementum, the periodontal ligament connects the teeth to their
+                    sockets.</div>
+            </div>
+            <div class="HotspotAnnotation">পেরিয়ডন্টাল লিগামেন্ট
+                <div class="HotspotAnnotationDescription">পেরিওডন্টাল লিগামেন্ট সংযোগকারী টিস্যু এবং কোলাজেন ফাইবার
+                    দিয়ে তৈরি। সিমেন্টামের সাথে, পেরিওডন্টাল লিগামেন্ট দাঁতকে দাঁতের সকেটের সাথে সংযুক্ত করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-9"
+            data-position="8.902778137653794m -10.632982000405137m -1.1097796706719976m"
+            data-normal="0.0007431893741495951m -0.0001831032288236869m -0.9999997070713381m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Jaw Bone
+                <div class="HotspotAnnotationDescription">The jaw bone contains the tooth sockets and surrounds the
+                    teeths' roots, and holds the teeth in place.</div>
+            </div>
+            <div class="HotspotAnnotation">চোয়ালের হাড়
+                <div class="HotspotAnnotationDescription">চোয়ালের হাড় দাঁতের সকেট ধারণ করে, দাঁতের শিকড়কে ঘিরে থাকে,
+                    এবং দাঁতগুলিকে যথাস্থানে ধরে রাখে।</div>
+            </div>
+
+        </button><button class="Hotspot" slot="hotspot-11"
+            data-position="-18.632184981227308m 6.9357740712608615m -0.10477694869041443m" data-normal="0m 0m -1m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Crown
+                <div class="HotspotAnnotationDescription">The crown is the anatomical portion of each tooth that
+                    protrudes out of the gums.</div>
+            </div>
+            <div class="HotspotAnnotation">ক্রাউন
+                <div class="HotspotAnnotationDescription">মুকুট হল প্রতিটি দাঁতের শারীরবৃত্তীয় অংশ যা মাড়ি থেকে
+                    বেরিয়ে আসে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-12"
+            data-position="-18.57300422388181m -0.12796249587124553m -0.10477694869040732m" data-normal="0m 0m -1m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Neck
+                <div class="HotspotAnnotationDescription">A slim, irregular margin that constitutes the boundary between
+                    the enamel covering the crown and the cementum covering the root.</div>
+            </div>
+            <div class="HotspotAnnotation">নেক
+                <div class="HotspotAnnotationDescription">একটি পাতলা, অনিয়মিত মার্জিন যা মুকুটকে আচ্ছাদনকারী এনামেল এবং
+                    মূলকে আচ্ছাদিত সিমেন্টামের মধ্যে সীমানা গঠন করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-13"
+            data-position="-18.58750542129297m -8.984835877533014m -0.10477694869041443m" data-normal="0m 0m -1m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Root
+                <div class="HotspotAnnotationDescription"> The root is the region of the tooth that is below the gum.
+                </div>
+            </div>
+            <div class="HotspotAnnotation">রুট
+                <div class="HotspotAnnotationDescription">রুট হল দাঁতের সেই অঞ্চল যা মাড়ির নীচে থাকে।</div>
+            </div>
+        </button>
+    </model-viewer>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="./main.js"></script>
+    </div>
+
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+</head>
+
+<div class="content" style="position: relative">
+    <!-- Rounded switch -->
+    <label class="switch">
+        <input type="checkbox" onchange="setLang()">
+        <span class="slider round"></span>
+        <span class="switch-en">en</span>
+        <span class="switch-bn">bn</span>
+    </label>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="EyeballExport_04.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+        poster="poster.webp" shadow-intensity="1" exposure="1  " shadow-softness="1"
+        camera-orbit="290.6deg 87.35deg auto" id="en">
+        <button class="Hotspot" slot="hotspot-2"
+            data-position="0.04240963311669921m -0.025387532415947937m 1.16378373240866m"
+            data-normal="0.06645661122211852m -0.05244915396667129m 0.9964098579766525m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Cornea
+                <div class="HotspotAnnotationDescription">The clear front window of the eye which transmits and focuses
+                    light into the eye.</div>
+            </div>
+            <div class="HotspotAnnotation">কর্নিয়া
+                <div class="HotspotAnnotationDescription">চোখের সামনের পরিষ্কার পর্দা যা চোখের মধ্যে আলো প্রেরণ এবং
+                    ফোকাস করে।</div>
+            </div>
+        </button>
+        <button class="Hotspot" slot="hotspot-3"
+            data-position="0.07239726156459803m 0.1826017725325637m 0.9117698571750843m"
+            data-normal="-0.0040708448370411114m -0.010029691970577221m 0.9999414150345449m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Iris
+                <div class="HotspotAnnotationDescription">The colored part of the eye which helps regulate the amount of
+                    light entering the eye. When there is bright light, the iris closes the pupil to let in less light.
+                    And when there is low light, the iris opens up the pupil to let in more light.</div>
+            </div>
+            <div class="HotspotAnnotation">আইরিস
+                <div class="HotspotAnnotationDescription">চোখের রঙিন অংশ, যা চোখে কতটুকু আলো প্রবেশ করে তার পরিমাণ
+                    নিয়ন্ত্রণ করতে সাহায্য করে। যখন উজ্জ্বল আলো থাকে, তখন কম আলো দেওয়ার জন্য আইরিস পিউপিলকে বন্ধ
+                    করে দেয়। এবং যখন কম আলো থাকে, তখন আইরিস আরও আলো দেওয়ার জন্য পিউপিলকে খুলে দেয়।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-6"
+            data-position="0.07567121137826138m -0.0076606646399395295m 0.8785175049739795m"
+            data-normal="0.20403021038277122m 0.018784269893722307m 0.978784360549208m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Pupil
+                <div class="HotspotAnnotationDescription">The dark center opening in the middle of the iris. The pupil
+                    changes size to adjust for the amount of light available.</div>
+            </div>
+            <div class="HotspotAnnotation">পিউপিল
+                <div class="HotspotAnnotationDescription">আইরিসের মাঝখানে খোলা অন্ধকার কেন্দ্র। উপলব্ধ আলোর পরিমাণ
+                    সামঞ্জস্য করতে পিউপিল আকার পরিবর্তন করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-9"
+            data-position="0.006732093426078389m -0.5272569711970017m 0.7764178467028521m"
+            data-normal="-0.9868955133129861m 0.15976386527661166m 0.022644053404248275m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Ciliary Body
+                <div class="HotspotAnnotationDescription">Structure containing muscle and is located behind the iris,
+                    which focuses the lens.</div>
+            </div>
+            <div class="HotspotAnnotation">সিলিয়ারি বডি
+                <div class="HotspotAnnotationDescription">মাসেল সমন্বিত কাঠামো এবং আইরিসের পিছনে অবস্থিত, যা লেন্সকে
+                    ফোকাস করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-10"
+            data-position="0.07782049945371616m -0.007995326816423565m 0.30086818558184136m"
+            data-normal="-0.9804624453485236m 0.19483776232186395m -0.027048837952901455m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Hyaloid Canal
+                <div class="HotspotAnnotationDescription">A narrow and somewhat oblique channel that extends from the
+                    optic disc to the posterior pole of the lens, and serves to transmit the hyaloid artery in fetal
+                    life, which supplies the lens in this period.</div>
+            </div>
+            <div class="HotspotAnnotation">হায়ালয়েড ক্যানাল
+                <div class="HotspotAnnotationDescription">একটি সরু, কিছুটা তির্যক ক্যানাল, যা অপটিক ডিস্ক থেকে
+                    লেন্সের
+                    পশ্চাৎ মেরু পর্যন্ত বিস্তৃত। ভ্রূণের জীবনে হাইলয়েড ধমনী প্রেরণ করতে কাজ করে, এবং এই সময়ে
+                    লেন্সের পুষ্টি উপাদান সরবরাহ করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-13"
+            data-position="0.00615556441166408m -0.09547893659038453m -1.4363380714443807m"
+            data-normal="-0.7702952132437532m 0.6364047053754774m -0.04042691466971722m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Optic Nerve
+                <div class="HotspotAnnotationDescription">A bundle of more than a million nerve fibers carrying visual
+                    messages from the retina to the brain.</div>
+            </div>
+            <div class="HotspotAnnotation">অপটিক নার্ভ
+                <div class="HotspotAnnotationDescription">এক মিলিয়নেরও বেশি স্নায়ু তন্তুর একটি বান্ডিল যা রেটিনা থেকে
+                    মস্তিষ্কে চাক্ষুষ বার্তা বহন করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-17"
+            data-position="0.00018824810512541035m 0.43837923312841953m 0.05901933896977796m"
+            data-normal="-0.9999955227583466m -0.002978396517923536m -0.0002891668086042722m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Vitreous Humor
+                <div class="HotspotAnnotationDescription">A clear gelatinous substance filling the central cavity of
+                    the eye, behind the lens and in front of the retina.</div>
+            </div>
+            <div class="HotspotAnnotation">ভিট্রিয়াস হিউমার
+                <div class="HotspotAnnotationDescription">লেন্সের পিছনে এবং রেটিনার সামনে অবস্থিত চোখের কেন্দ্রীয়
+                    গহ্বরে একটি পরিষ্কার, জেলাটিনাস পদার্থ।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-18"
+            data-position="0.01m 0.68291525404478232m 0.785m"
+            data-normal="-0.31831784408842706m 0.6525968347391994m 0.6875980813115129m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Sclera
+                <div class="HotspotAnnotationDescription">The white outer coat of the eye, surrounding the iris.</div>
+            </div>
+            <div class="HotspotAnnotation">স্ক্লেরা
+                <div class="HotspotAnnotationDescription">
+                    চোখের বাইরের সাদা অংশ, যা আইরিসকে ঘিরে থাকে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-19"
+            data-position="-0.0027284166806991195m -0.6692101593391798m -0.7086653509550422m"
+            data-normal="-0.9940244321516525m -0.07676224497682992m -0.07760789928674783m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Choroid
+                <div class="HotspotAnnotationDescription">Layer containing blood vessels that lines the back of the eye
+                    and is located between the retina and the sclera.</div>
+            </div>
+            <div class="HotspotAnnotation">কোরয়েড
+                <div class="HotspotAnnotationDescription">রক্তনালী সমন্বিত স্তর যা চোখের পিছনে লাইন করে থাকে, এবং রেটিনা
+                    ও স্ক্লেরার মাঝখানে অবস্থিত।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-20"
+            data-position="0.031477370355878165m 0.37190358885065045m -0.8472764558111623m"
+            data-normal="-0.12780357120286415m -0.4142118206721838m 0.9011630345299507m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Fovea
+                <div class="HotspotAnnotationDescription">The fovea is a small depression within
+                    the neurosensory retina where visual acuity is the highest. The fovea itself is the central portion
+                    of the macula, which is responsible for central vision.</div>
+            </div>
+            <div class="HotspotAnnotation">ফোভিয়া
+                <div class="HotspotAnnotationDescription">ফোভিয়া নিউরোসেন্সরি রেটিনার মধ্যে একটি ছোট বিষণ্নতা,
+                    যেখানে চাক্ষুষ তীক্ষ্ণতা সবচেয়ে বেশি। ফোভিয়া নিজেই ম্যাকুলার একটি কেন্দ্রীয় অংশ যা
+                    কেন্দ্রীয় দৃষ্টিশক্তির জন্য দায়ী।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-21"
+            data-position="0.021376303635813443m -0.7688355825785747m 0.5073423081929378m"
+            data-normal="-0.9955244959713541m -0.03947326563337705m 0.08586523872451682m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Ora Serrata
+                <div class="HotspotAnnotationDescription">The ora serrata is the serrated junction between the retina
+                    and the ciliary body. This junction marks the transition from the simple non-photosensitive area of
+                    the retina to the complex, multi-layered photosensitive region.</div>
+            </div>
+            <div class="HotspotAnnotation">ওরা সেরাটা
+                <div class="HotspotAnnotationDescription">ওরা সেরাটা হল কোরয়েড এবং সিলিয়ারি বডির মাঝে অবস্থিত এক
+                    দানাদার সংযোগস্থল। এই সংযোগস্থলটি সিলিয়ারি বডির সরল, নন-ফটোসেনসিটিভ এলাকা থেকে রেটিনার জটিল,
+                    বহু-স্তরযুক্ত, আলোক সংবেদনশীল অঞ্চলে রূপান্তরকে চিহ্নিত করে।</div>
+            </div>
+
+        </button><button class="Hotspot" slot="hotspot-11"
+            data-position="0.07120659025171694m 0.009372684293851019m -1.140801451272139m"
+            data-normal="-0.9994536561891708m 0.024532726060476046m 0.022148013051749477m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Central Retinal Artery
+                <div class="HotspotAnnotationDescription">The central retinal artery is the first branch of the
+                    ophthalmic artery, and it supplies nerve fibers in the optic nerve as well as the inner layers of
+                    the retina.</div>
+            </div>
+            <div class="HotspotAnnotation">সেন্ট্রাল রেটিনাল আর্টেরি
+                <div class="HotspotAnnotationDescription">সেন্ট্রাল রেটিনাল আর্টেরি হল চক্ষু ধমনীর প্রথম শাখা, এবং এটি
+                    অপটিক নার্ভের পাশাপাশি রেটিনার অভ্যন্তরীণ স্তরগুলিতে স্নায়ু ফাইবার সরবরাহ করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-12"
+            data-position="0.0874334197604072m -0.009386961346642186m -1.3423346723325218m"
+            data-normal="-0.8723285725667365m -0.4888635507943283m 0.007435737249327651m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Central Retinal Vein
+                <div class="HotspotAnnotationDescription">The central retinal vein is a short vein in the
+                    retina of the eye. It travels through the optic nerve to drain blood from the retina into either,
+                    the superior ophthalmic vein or the cavernous sinus.</div>
+            </div>
+            <div class="HotspotAnnotation">সেন্ট্রাল রেটিনাল ভেইন
+                <div class="HotspotAnnotationDescription">সেন্ট্রাল রেটিনাল ভেইন হল চোখের রেটিনার একটি ছোট শিরা। এটি
+                    অপটিক নার্ভের মধ্য দিয়ে রেটিনা থেকে রক্ত ​​বের করে সুপিরিয়ার চক্ষু শিরা বা গুহাযুক্ত সাইনাসে
+                    যায়।</div>
+            </div>
+        </button>
+        </button><button class="Hotspot" slot="hotspot-1"
+            data-position="0.0345489933591816m 0.921077600514638m -0.05642433737341723m"
+            data-normal="-0.22598791438276014m -0.9724270293997415m 0.05757720942981338m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Retina
+                <div class="HotspotAnnotationDescription">The nerve layer lining the back of the eye. The retina senses
+                    light and creates electrical impulses that are sent through the optic nerve to the brain.</div>
+            </div>
+            <div class="HotspotAnnotation">রেটিনা
+                <div class="HotspotAnnotationDescription">চোখের পিছনের অংশে অবস্থিত স্নায়ু স্তর। রেটিনা আলো অনুভব করে
+                    এবং বৈদ্যুতিক আবেগ তৈরি করে যা অপটিক নার্ভের মাধ্যমে মস্তিষ্কে পাঠানো হয়।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-4" data-position="0.15m -0.02m -0.97m"
+            data-normal="-0.48909462784749297m 0.32443863157684777m 0.8096456134329789m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Blind Spot
+                <div class="HotspotAnnotationDescription">A small portion of the visual field of each eye that
+                    corresponds to the position of the optic disk within the retina. There are no photoreceptors in the
+                    optic disk, and therefore, there is no image detection in this area.</div>
+            </div>
+            <div class="HotspotAnnotation">ব্লাইন্ড স্পট
+                <div class="HotspotAnnotationDescription">প্রতিটি চোখের চাক্ষুষ ক্ষেত্রের একটি ছোট অংশ যা রেটিনার মধ্যে
+                    অপটিক ডিস্কের অবস্থানের সাথে মিলে যায়। অপটিক ডিস্কে কোনও ফটোরিসেপ্টর নেই, তাই এই এলাকায় কোনও চিত্র
+                    সনাক্তকরণ নেই।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-14"
+            data-position="0.028192076226643437m 1.2388575656267957m -0.21248727444114673m"
+            data-normal="-0.3728904748435733m 0.9226426673688513m 0.09840326275803014m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Superior Rectus Muscle
+                <div class="HotspotAnnotationDescription">The superior rectus muscle has the primary function of
+                    elevating the eye, causing the cornea to move superiorly.</div>
+            </div>
+            <div class="HotspotAnnotation">সুপিরিয়ার রেকটাস মাসেল
+                <div class="HotspotAnnotationDescription">সুপিরিয়ার রেকটাস মাসেলের প্রাথমিক কাজ হল চোখ উপরে তোলা, যার
+                    ফলে কর্নিয়া উপরের দিকে ঘোরে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-16"
+            data-position="0.018753055286890863m -1.1169821877719257m -0.30321922689441466m"
+            data-normal="-0.9995329064778536m -0.030521812242286492m 0.001545265472609143m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Inferior Rectus Muscle
+                <div class="HotspotAnnotationDescription">The inferior rectus has a primary action of depressing the
+                    eye, causing the cornea to move inferiorly.</div>
+            </div>
+            <div class="HotspotAnnotation">ইনফিরিয়ার রেকটাস মাসেল
+                <div class="HotspotAnnotationDescription">ইনফিরিয়ার রেকটাস মাসেলের প্রাথমিক কাজ হল চোখ নিচে নামানো, যার
+                    ফলে কর্নিয়া নিচের দিকে ঘোরে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-8"
+            data-position="0.07333851019104554m -0.32495750688336844m 0.7772635186032142m"
+            data-normal="-0.9753866582738181m -0.0865919764847411m -0.20278731831625965m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Suspensory Ligament
+                <div class="HotspotAnnotationDescription">A series of small ligamentous bands that extend from the
+                    ciliary processes to the equator of the lens, holding in place. It also plays an important role in
+                    changing the shape of the lens when needed.</div>
+            </div>
+            <div class="HotspotAnnotation">সাসপেনসরি লিগামেন্ট
+                <div class="HotspotAnnotationDescription">ছোট ছোট সন্ধিবন্ধনীয় ব্যান্ডের একটি ক্রম, যা সিলিয়ারি প্রসেস
+                    থেকে লেন্সের বিষুব রেখা পর্যন্ত প্রসারিত। এটা লেন্স জায়গায় ধরে থাকে, এবং প্রয়োজনের সময়
+                    লেন্সের আকৃতি পরিবর্তনেও এটি গুরুত্বপূর্ণ ভূমিকা পালন করে।</div>
+            </div>
+        </button><button class="Hotspot" slot="hotspot-15"
+            data-position="0.004264164698119632m 0.0004588460421038332m 0.7167773296560038m"
+            data-normal="-0.9630185187272442m -0.05556032430827991m -0.263644425222957m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Lens
+                <div class="HotspotAnnotationDescription">Focuses light rays onto the retina by changing its shape with
+                    the help of suspensory ligaments.</div>
+            </div>
+            <div class="HotspotAnnotation">লেন্স
+                <div class="HotspotAnnotationDescription">সাসপেনসরি লিগামেন্টের সাহায্যে এর আকৃতি পরিবর্তন করে রেটিনার
+                    উপর আলোক রশ্মি ফোকাস করে।</div>
+            </div>
+
+        </button>
+    </model-viewer>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="./main.js"></script>
+    </div>
+
+</html>
